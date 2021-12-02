@@ -5,53 +5,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            text-align:justify;
+        }
+
+        div {
+            font-size: 14px;
+            font-style: normal;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 id="title">Effects Of HIV on Economy</h1>
-    <p id="description">The survey is conducted to find how HIV has affected the economy</p>
-    <form id="survey-form">
-        <label id="name-label">Name</label><input id="name" type="text" placeholder="Name" required>
-        <label id="email-label">Email</label><input id="email" type="email"  placeholder="Email Address" required>
-        <label id="number-label">Phone Number</label><input id="number" type="number" min="10" max="20"
-            placeholder="Phone number">
-        <label>Effect Ratio</label><select id="dropdown">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
-     </br>
-        <label for="radio1">
-            <input type="radio" name="radio1" id="radio1" value="Affected with HIV"> Affected with HIV
-        </label>
-        <label for="radio1">
-            <input type="radio" name="radio1" id="radio2" value="Relative affected with HIV"> Relative affected with HIV
-        </label>
-        <label for="radio1">
-            <input type="radio" name="radio1" id="radio3" value="Don't wish to disclose"> Don't wish to disclose
-        </label>
-    </br>
+    <div class="jumbotron container">
+        <h1 id="title">Effects Of HIV on Economy</h1>
+        <p id="description">The survey is conducted to find how HIV has affected the economy</p>
+    </div>
+    <div class="conatainer" style="align-items: right;">
+        <form id="survey-form" class="jumbotron container">
+            <div class="form-group">
+                <label id="name-label" class="form-check-label">Name</label>
+                <input id="name" type="text" placeholder="Name" required>
+            </div>
 
-        <p> What have you lost due to HIV</p>
-        <label for="check1">
-            <input type="checkbox" id="check1" value="Friends"> Friends
-        </label>
-        <label for="check2">
-            <input type="checkbox" id="check2" value="Job"> Job
-        </label>
-        <label for="check3">
-            <input type="checkbox" id="check3" value="Relative"> Relative
-        </label>
-        <label for="check4">
-            <input type="checkbox" id="check4" value="Others"> Others
-        </label>
-        <label> Other Comment</label> <textarea placeholder="enter comments here"></textarea>
-        <button id="submit">Submit</button>
-    </form>
+            <div class="form-group">
+                <label id="email-label" class="form-check-label">Email</label>
+                <input id="email" type="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" class="form-check-label">Phone Number</label>
+                <input id="number" type="number" min="10" max="20" placeholder="Phone number">
+            </div>
+            <div class="form-group">
+                <label>Effect Ratio</label><select id="dropdown">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="radio1" class="form-check-label">
+                    <input type="radio" name="radio1" id="radio1" value="Affected with HIV"> Affected with HIV
+                </label>
+                <label for="radio1" class="form-check-label">
+                 <input type="radio" name="radio1" id="radio2" value="Relative affected with HIV"> Relative affected                    with
+                    HIV
+                </label>
+                <label for="radio1">
+                    <input type="radio" name="radio1" id="radio3" value="Don't wish to disclose"> Don't wish to disclose
+                </label>
+            </div>
+            <div class="form-group">
+                <h3> What have you lost due to HIV</h3>
+                <label for="check1">
+                    <input type="checkbox" id="check1" value="Friends"> Friends
+                </label>
+                <label for="check2">
+                    <input type="checkbox" id="check2" value="Job"> Job
+                </label>
+                <label for="check3">
+                    <input type="checkbox" id="check3" value="Relative"> Relative
+                </label>
+                <label for="check4">
+                    <input type="checkbox" id="check4" value="Others"> Others
+                </label>
+                <div><label> Other Comment</label> <textarea placeholder="enter comments here"></textarea></div>
+
+            </div>
+            <button class="btn btn-primary" type="submit" id="submit">Submit</button>
+        </form>
+    </div>
 
 </body>
 
